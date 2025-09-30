@@ -1,3 +1,8 @@
+/**
+ * @author: Yatharth Upadhayay
+ * github: https://github.com/YatharthaUpadhayay 
+ */
+
 import mongoose from "mongoose";
 
 const folderSchema = new mongoose.Schema(

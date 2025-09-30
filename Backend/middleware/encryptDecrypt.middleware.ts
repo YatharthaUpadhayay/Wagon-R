@@ -6,6 +6,11 @@ export function decryptPassword() {
     console.log("decryptionPassword");
 }
 
+/**
+ * @author: Yatharth Upadhayay
+ * github: https://github.com/YatharthaUpadhayay 
+ */
+
 export function encryptPasswordResetAnswer() {
     console.log("encrypt password reset que");
 }

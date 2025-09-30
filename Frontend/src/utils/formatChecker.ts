@@ -1,3 +1,8 @@
+/**
+ * @author: Yatharth Upadhayay
+ * github: https://github.com/YatharthaUpadhayay 
+ */
+
 function isUsernameFormatCorrect(username :string) :boolean {
     // Checking the username is in lowercase or not
     const isLowerCase :boolean = username === username.toLowerCase();
@@ -20,9 +25,31 @@ function isEmailFormatCorrect(email :string) :boolean {
     return isLowerCase && isValidSyntax;
 }
 
+function isPasswordFormatCorrect(password :string) :boolean {
+    // has at least 12 characters
+    const isPasswordLengthValid :boolean = password.length > 12 ? true : false;
+
+    // has at least 1 uppercase letter
+    const isPasswordMixedCase :boolean = password !== password.toLowerCase() ? true : false;
+
+    // has at least 1 number
+    const regex :RegExp = /\d/;
+    const isPasswordWithNumber = regex.test(password);
+
+    // Returning the results
+    return isPasswordLengthValid && isPasswordMixedCase && isPasswordWithNumber;
+}
+
+function isPasswordResetAnswerFormatCorrect(passwordResetAnswer :string) :boolean {
+    // Should be one word
+    return passwordResetAnswer.length > 0 && !passwordResetAnswer.includes(' ');
+}
+
 const FormatChecker = {
     isUsernameFormatCorrect,
-    isEmailFormatCorrect
+    isEmailFormatCorrect,
+    isPasswordFormatCorrect,
+    isPasswordResetAnswerFormatCorrect
 }
 
 export default FormatChecker;

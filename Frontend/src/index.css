@@ -1,3 +1,13 @@
-input, select {
-    display: block;
+@import "tailwindcss";
+
+.input-field {
+    @apply bg-[#eee] w-full border-[none] px-4 py-2 text-[1rem] w-[13em] rounded-2xl text-[lightcoral] [box-shadow:0_0.4rem_#dfd9d9] cursor-pointer focus:outline-[lightcoral] block
+}
+
+.select-field {
+    @apply bg-[#eee] w-full border-[none] py-2 px-4 text-[1rem] w-[13em] rounded-2xl text-[lightcoral] [box-shadow:0_0.4rem_#dfd9d9] cursor-pointer focus:outline-[lightcoral] block
+}
+
+.button-1 {
+    @apply bg-[#eee] w-full border-[none] py-2 px-4 text-[1rem] w-[10em] rounded-2xl text-[lightcoral] [box-shadow:0_0.4rem_#dfd9d9] cursor-pointer active:text-[white] active:[box-shadow:0_0.2rem_#dfd9d9] active:translate-y-[0.2rem] bg-[lightcoral] text-[white] [text-shadow:0_0.1rem_#bcb4b4] cursor-auto text-[grey]
 }

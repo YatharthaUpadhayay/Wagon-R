@@ -1,0 +1,6 @@
+1. verify the working of formatChecker class
+2. Write the encryption algorithm
+3. Remove the white spacing from the input before processing ✅
+4. Write a function to create a new user
+5. user routers to switch from one signup page to another ✅
+6. Build the frontend for signup

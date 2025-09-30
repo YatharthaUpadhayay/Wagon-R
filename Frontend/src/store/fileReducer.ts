@@ -1,3 +1,8 @@
+/**
+ * @author: Yatharth Upadhayay
+ * github: https://github.com/YatharthaUpadhayay 
+ */
+
 import {createSlice, type Slice} from "@reduxjs/toolkit";
 
 const initialState :Object = {
